@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ShoppingItem from './ShoppingItem';
 
 class ShoppingList extends Component {
 	render() {
@@ -6,9 +7,9 @@ class ShoppingList extends Component {
 			<div className="shopping-list">
 				<h1>Shopping List for {this.props.name}</h1>
 				<ul>
-					<li>Laptop</li>
-					<li>Monitor</li>
-					<li>Backpack</li>
+					<ShoppingItem item="Macbook"></ShoppingItem>
+					<ShoppingItem item="1440p monitor"></ShoppingItem>
+					<ShoppingItem item="Backpack"></ShoppingItem>
 				</ul>
 			</div>
 		);
